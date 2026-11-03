@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css"rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet" />
     <title>Document</title>
 </head>
+
 <body>
-    <nav class="navbar"> 
+    <nav class="navbar">
         <div class="logo"> FRONTEND</div>
-        <button class="menu-toggle"aria-label="Abrir menu">
-             <span class="bar"></span>
-             <span class="bar"></span>
-             <span class="bar"></span>
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </button>
         <ul class="nav-links">
             <li><a href="#">Início</a></li>
             <li><a href="#">Conteúdo</a></li>
-            <li><a href="#">Depoimentos</a></li>            
+            <li><a href="#">Depoimentos</a></li>
             <li><a href="#">Exemplos</a></li>
             <li><a href="#">Tutorial</a></li>
         </ul>
@@ -42,8 +44,8 @@
                     <P> Estruturação de Páginas com semantica e boas praticas.</P>
                 </div>
                 <div class="card">
-                <h3>CSS</h3>
-                <p>Estilização moderna com cores, fontes, layout responsivo.</p>
+                    <h3>CSS</h3>
+                    <p>Estilização moderna com cores, fontes, layout responsivo.</p>
                 </div>
                 <div class="card">
                     <h3>JavaScript</h3>
@@ -52,24 +54,25 @@
             </div>
         </section>
         <section class="depoimentos">
-         <h2>O que dizem nossos alunos</h2>
-         <div class="depoimentos-grid">
-            <div class="depoimento">
-                <img src="images/aluno1.jpg" alt="Foto do aluno João">
-                <p>"Aprender frontend ficou muito mais fácil com esse projeto. Agora consigo criar minhas proprias pagninas"</p>
-                <span>João Pereira</span>
+            <h2>O que dizem nossos alunos</h2>
+            <div class="depoimentos-grid">
+                <div class="depoimento">
+                    <img src="images/aluno1.jpg" alt="Foto do aluno João">
+                    <p>"Aprender frontend ficou muito mais fácil com esse projeto. Agora consigo criar minhas proprias
+                        pagninas"</p>
+                    <span>João Pereira</span>
+                </div>
+                <div class="depoimento">
+                    <img src="images/aluno2.jpg" alt="Foto da aluno Maria">
+                    <p>"As explicações são diretas e os exemplos me ajudaram a entender o que eu achava impossível"</p>
+                    <span>Maria Oliveira</span>
+                </div>
+                <div class="depoimento">
+                    <img src="images/aluno3.png" alt="Foto do aluno Ana">
+                    <p>"O projeto me deu confiança para montar meu portifólio e participar de procssos seletivos"</p>
+                    <span>Ana Costa</span>
+                </div>
             </div>
-            <div class="depoimento">
-                <img src="images/aluno2.jpg" alt="Foto da aluno Maria">
-                <p>"As explicações são diretas e os exemplos me ajudaram a entender o que eu achava impossível"</p>
-                 <span>Maria Oliveira</span>
-            </div>
-            <div class="depoimento">
-                <img src="images/aluno3.png" alt="Foto do aluno Ana">
-                <p>"O projeto me deu confiança para montar meu portifólio e participar de procssos seletivos"</p>
-                <span>Ana Costa</span>
-            </div>
-         </div>
 
 
         </section>
@@ -94,15 +97,73 @@
                 </div>
             </div>
         </section>
+        <section class="funcionamento">
+            <h2>Como Funciona o Aprendizado</h2>
+            <p class="exemplos-descricao">Veja o passos a passo que você vai seguir para denominar o desenvolvimento
+                Frontend</p>
+            <div class="aprendizado-grid">
+                <div class="aprendizado-card">
+                    <div class="numero">1</div>
+                    <div class="conteudo-aprendizado">
+                    <h3>Fundamentos de HTML</h3>
+                    <p>Aprenda a etruturar páginas com semântica, acessibilidade e boas práticas</p>
+                    </div>
+                </div>
+
+                <div class="aprendizado-card">
+                     
+                    <div class="numero">2</div>
+                    <div class="conteudo-aprendizado">
+                    <h3>Estilização com CSS</h3>
+                    <p>Crie layouts modernos com cores, fontes, espaçamentos e responsevidade</p>
+                     </div>
+                </div>
+                <div class="aprendizado-card">
+                    <div class="numero">3</div>
+                    <div class="conteudo-aprendizado">
+                    <h3>Interatividade com JavaScript</h3>
+                    <p>Adicione vida a sua página com eventos, manipulação de DOM e lógica de programação</p>
+                    </div>
+                </div>
+                <div class="aprendizado-card">
+                    <div class="numero">4</div>
+                    <div class="conteudo-aprendizado">
+                    <h3>Projeto Final</h3>
+                    <p>Coloque tudo em práica desenvolvendo um site completo e visualmente atrativo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="rodape">
+    <div class="conteudo-rodape">
+      <h2>Frontend Demo</h2>
+      <p>Aprenda criando interfaces reais com HTML, CSS e JS</p>
+    </div>
+     
+      <ul class="lista">
+        <li>Inicio</li>
+        <li>Conteudo</li>
+        <li>Depoimentos</li>
+        <li>Exemplos</li>
+        <li>Tutorial</li>
+      </ul>
+        </div>
+        <div class="direitos">
+     &copy; 2024 Frontend Demo. Todos os direitos reservados.
+     <div>
+    </footer>
     <script>
         const toggle = document.querySelector(".menu-toggle");
         const navLinks = document.querySelector(".nav-links");
 
-        toggle.addEventListener("click", ()=>{
-              toggle.classList.toggle("active");
-              navLinks.classList.toggle("show");
+        toggle.addEventListener("click", () => {
+            toggle.classList.toggle("active");
+            navLinks.classList.toggle("show");
         });
     </script>
 </body>
+
 </html>
+

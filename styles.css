@@ -234,6 +234,112 @@ font-weight: 500;
 
 }
 
+.funcionamento h2{
+   
+    text-align: center;
+    
+    
+}
+.exemplos-descricao{
+    text-align: center;
+    margin-bottom: 0rem;
+   
+}
+
+.conteudo h2{
+    font-size: 2rem;
+    color: #111827;
+    margin-bottom: 2rem;
+}
+
+.aprendizado-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    width: 64rem;
+    align-items: center;
+    
+}
+.aprendizado-card .numero{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    background-color: #4f46e5;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 40px;
+    min-width: 40px;
+    color: #fff;
+}
+h3{
+    display: flex;
+    color: #4f46e5;
+   
+}
+.aprendizado-grid{
+   padding: 6.5rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.rodape{
+    
+    background-color: #4f46e5;
+    color: #fff;
+    height: 12rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+  
+}
+.conteudo-rodape{
+    color: #fff;
+    align-items: center;
+}
+
+.lista{
+    text-align: right;
+    list-style: none;
+    font-size: 20px;
+}
+footer{
+    background-color: #4f46e5;
+    color: #fff;
+    text-align: center;
+    border-top: 4px solid #e5e7eb;
+}
+.direitos{
+    border-top: 0.1px solid #e5e7eb;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 768px){
     .menu-toggle{
         display: flex;
@@ -252,6 +358,11 @@ font-weight: 500;
         animation: slideDown 0.3s ease forwards;
     }
     
+
+
+
+
+
     @keyframes slideDown{
         from {
             opacity: 0;
